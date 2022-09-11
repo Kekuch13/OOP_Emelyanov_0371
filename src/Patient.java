@@ -4,6 +4,7 @@ public class Patient {
     private String phone;
     private String birthday;
     private String contract;
+    
     public int getId() {
         return id;
     }
