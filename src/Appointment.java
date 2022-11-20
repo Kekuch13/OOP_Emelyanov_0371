@@ -1,38 +1,68 @@
+import java.util.Date;
+
 public class Appointment {
-    private int id;
-    private String start;
-    private String end;
-    private int patientId;
+    private int ID;
+    private Date start;
+    private Date end;
+    private int patientID;
+    private int docID;
 
-    public int getId() {
-        return id;
+    public Appointment(int ID, Date start, Date end, int patientID, int docID) {
+        this.ID = ID;
+        this.start = start;
+        this.end = end;
+        this.patientID = patientID;
+        this.docID = docID;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getID() {
+        return ID;
     }
 
-    public String getStart() {
+    public void setID(int ID) {
+        this.ID = ID;
+    }
+
+    public Date getStart() {
         return start;
     }
 
-    public void setStart(String start) {
+    public void setStart(Date start) {
         this.start = start;
     }
 
-    public String getEnd() {
+    public Date getEnd() {
         return end;
     }
 
-    public void setEnd(String end) {
+    public void setEnd(Date end) {
         this.end = end;
     }
 
-    public int getPatientId() {
-        return patientId;
+    public int getPatientID() {
+        return patientID;
     }
 
-    public void setPatientId(int patientId) {
-        this.patientId = patientId;
+    public void setPatientID(int patientID) {
+        this.patientID = patientID;
+    }
+
+    public int getDocID() {
+        return docID;
+    }
+
+    public void setDocID(int patientId) {
+        this.docID = docID;
+    }
+
+    @Override
+    public String toString() {
+        return "Appointment{" +
+                "ID=" + ID +
+                ", start='" + start + '\'' +
+                ", end='" + end + '\'' +
+                ", patientID=" + patientID +
+                ", docID=" + docID +
+                '}';
     }
 }

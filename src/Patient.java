@@ -1,16 +1,16 @@
 public class Patient {
-    private int id;
+    private int ID;
     private String name;
     private String phone;
     private String birthday;
     private String contract;
     
-    public int getId() {
-        return id;
+    public int getID() {
+        return ID;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setID(int ID) {
+        this.ID = ID;
     }
 
     public String getName() {
