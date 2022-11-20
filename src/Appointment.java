@@ -19,40 +19,20 @@ public class Appointment {
         return ID;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
-    }
-
     public Date getStart() {
         return start;
-    }
-
-    public void setStart(Date start) {
-        this.start = start;
     }
 
     public Date getEnd() {
         return end;
     }
 
-    public void setEnd(Date end) {
-        this.end = end;
-    }
-
     public int getPatientID() {
         return patientID;
     }
 
-    public void setPatientID(int patientID) {
-        this.patientID = patientID;
-    }
-
     public int getDocID() {
         return docID;
-    }
-
-    public void setDocID(int patientId) {
-        this.docID = docID;
     }
 
     @Override
